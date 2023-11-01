@@ -1,0 +1,205 @@
+import UIKit
+
+//var peremennaya = 10
+
+//let const = 22
+
+//var a1: Int = 10
+
+//var a2: Double = 2.5
+
+//var a3: Float = 2.6
+
+//var a4 = 55
+
+//var c = a1 + a2 (так нельзя, нужно сделать приведение типов)
+
+//var c = a1 + Int (a2)
+
+//let i = 5 + 5.5
+
+//typealias myNuber = Int
+
+//var chislo: myNuber = 10
+
+//print(chislo)
+
+//print("privet")
+
+//var boolValue: Bool = true
+
+//if boolValue == true{
+///    print("hello")
+//} else{
+//    print("Bay")
+//}
+
+// if - если это ... , else - то ... print (распечатай тот-то)
+
+//var o = 111_123_654
+// читсо для удобства
+
+
+// дз 2
+
+// 1 попрактиковаться
+
+var a1: Int = 100
+
+var a2: Double = 4.3
+
+var a3: Float = 34.567
+
+var c = a2 + Double(a1)
+var y = a1 + Int(a2)
+var e = a1 + Int(a2) + Int(a3)
+
+typealias myNumber = Double
+var chislo = 2.6
+
+print(chislo)
+
+typealias myNumber2 = Int
+var chislo2 = 23
+
+print(chislo2)
+
+print(chislo2 + Int(chislo))
+
+typealias myName1 = String
+var name = "Privet"
+
+print(name + " " + ("как дела ?"))
+
+typealias myName2 = String
+var name2 = "Privet, good!"
+
+print(name2)
+
+//var good: Bool = true
+
+//if good == true{
+    print("красавчик")
+//}else{
+    print("дурак")
+//}
+
+var eliseyTeacherSwift: Bool = true
+
+if eliseyTeacherSwift == true{
+    print("молодец")
+}else{
+    print("не молодец")
+}
+
+// 2 с документацией ознакомлюсь
+//  3 описать что такое псевдоним типа - опишу
+// 4 создайте несклько псевдонимов на разные типы
+
+typealias ageType = UInt
+var myAge: ageType = 18
+
+typealias nameType = String
+var myType: nameType = "Elisey"
+
+typealias numberType = Double
+var myType2: numberType = 3.89
+
+typealias slowoType = String
+var myType3: slowoType = "Занимался карате 9 лет"
+
+// 5 создайте различные выражения с приведением типа
+
+let notEmptyString = String("Hello Elisey")
+
+let someDoubleNumber = 74.22
+let someStringNumber = String(someDoubleNumber)
+
+let a1IntNumber = 134
+let a1StringNumber = String(a1IntNumber)
+
+let chisloDoubleNumber = 123.345
+let chisliStringNumber = String(chisloDoubleNumber)
+
+let nameString = "Good job"
+let nameInt = Int(nameString)
+// хз ваще че такое сделал, какой nil
+
+let name5 = "Черепаха Боб"
+let hello = "Привет меня зовут\(name5)!"
+let meters: Int = 299
+let text = "Моя длина\(meters) метров"
+print(hello)
+print(text)
+// интерполяция   \(имя константы или переменной)
+
+let myName = "Елисей"
+let helllo = "Привет, меня зовут\(myName)"
+let meterrs: Int = 181
+let texxt = "Мой рост\(meterrs) сантиметров"
+
+print(helllo)
+print(texxt)
+
+let firsHaracteristica = "Мой вес"
+let weight = 76.6
+let secondtext = "Кг"
+let resultText = firsHaracteristica + String(weight) + secondtext
+print(resultText)
+
+// поиграйтесь с выражениями - + / *
+
+var res = 123 + 12345
+var res1 = 123 - 12345
+var res2 = 12345 - 123
+var res3 = 0.345 * 12
+var res4 = -4 + (3 / 34)
+var res5 = (6.98 * 45.3) + (165 / 5) * 123456
+
+// описать в гисте что такле целые числа
+// целые числа - любые положительные, отрицательыне и ноль ,числа без дробной части
+
+55
+76
+-12
+0
+// это числовые литералы
+"Elisey"
+"Good car"
+"Swift"
+// это строковые литералы
+true
+false
+// это логические литералы
+
+var number1: Int = 123
+type(of: number1)
+
+var number: Int = 65
+type(of: number)
+
+//9 описать какие в сфит существуют доп. целочисленные типы данных (UInt8 ; UInt16 ; UInt32 ; UInt64 ; Int (8 ; 16 ; 32 ; 64)
+
+// 10 описать что такое юникод скаляры, написать несколько выражений . Вообще не понял что это
+
+// 11 что такое хешируемые и сопоставимые типы данных . Написать примеры хешируемых типов данных
+// хеш - тип данных для котрого может быть расчитан специальный цифровой код
+let stringForHash = "Строка текста"
+stringForHash.hashValue
+
+let intForHash = 23
+intForHash.hashValue
+
+let boolForHash = false
+boolForHash.hashValue
+
+let stringHello = "Привет"
+stringHello.hashValue
+
+let intAge = 18
+intAge.hashValue
+
+let boolI = true
+boolI.hashValue
+
+// Обьясниить разницу между Double и Float . Double - 32 битное число с плавающей точкой , а Float - 64 битное число с плавающей точкой 
